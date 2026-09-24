@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🌟 شارك المنشور لتعم الفائدة ويستفيد أولياء آخرون💼</title>
+<meta name="robots" content="noindex">
+<meta property="og:url" content="https://ghlamoundz-blip.github.io/fb-cards/p/b04c146a/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="🌟 شارك المنشور لتعم الفائدة ويستفيد أولياء آخرون💼">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://ghlamoundz-blip.github.io/fb-cards/p/b04c146a/image.jpg">
+<meta property="og:image:secure_url" content="https://ghlamoundz-blip.github.io/fb-cards/p/b04c146a/image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:#f0f2f5;font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;color:#1c1e21}
+.card{width:100%;max-width:420px;background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.12);overflow:hidden;text-align:center}
+.card img{display:block;width:100%;max-height:45vh;object-fit:cover}
+.body{padding:18px}
+h1{font-size:19px;margin:0 0 6px;line-height:1.5}
+p{margin:0 0 16px;color:#65676b}
+.btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;text-decoration:none;font:inherit;font-weight:700;font-size:17px;margin-bottom:10px;cursor:pointer}
+.follow{background:#1877f2;color:#fff}
+.go{background:#e4e6eb;color:#1c1e21}
+small{color:#65676b}
+.ask{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px}
+.ask.show{display:flex;animation:f .25s ease}
+.box{width:100%;max-width:360px;background:#fff;border-radius:16px;padding:22px 18px;text-align:center;animation:u .3s ease}
+.box .big{font-size:44px;line-height:1}
+.box h2{font-size:21px;margin:10px 0 6px}
+.box p{margin-bottom:16px}
+.later{background:none;border:0;color:#65676b;font:inherit;text-decoration:underline;cursor:pointer;padding:6px}
+@keyframes f{from{opacity:0}}
+@keyframes u{from{transform:translateY(20px);opacity:0}}
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="https://ghlamoundz-blip.github.io/fb-cards/p/b04c146a/image.jpg" alt="">
+  <div class="body">
+    <h1>🌟 شارك المنشور لتعم الفائدة ويستفيد أولياء آخرون💼</h1>
+    
+    <a class="btn follow js-follow" href="https://www.facebook.com/profile.php?id=61594262661262" target="_blank" rel="noopener">👍 تابع صفحتنا على فيسبوك</a>
+    <a class="btn go" id="go" href="https://www.facebook.com/profile.php?id=61594262661262">متابعة إلى الموقع ←</a>
+    <small id="count">سيتم تحويلك تلقائياً خلال <b id="n">3</b> ثانية</small>
+  </div>
+</div>
+
+<div class="ask" id="ask" role="dialog" aria-modal="true">
+  <div class="box">
+    <div class="big">🙏</div>
+    <h2>رجاءً تابعنا</h2>
+    <p>متابعتك لصفحتنا تدعمنا كثيراً، وتصلك عروضنا الجديدة أولاً بأول.</p>
+    <a class="btn follow js-follow" href="https://www.facebook.com/profile.php?id=61594262661262" target="_blank" rel="noopener">👍 نعم، سأتابع الصفحة</a>
+    <button class="later" id="later">لاحقاً، أكمل إلى الموقع</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var target="https://www.facebook.com/profile.php?id=61594262661262", n=3, asked=false, followed=false, t;
+  try{ followed = localStorage.getItem('fbFollowed')==='1'; }catch(e){}
+  var $=function(id){return document.getElementById(id);};
+
+  function go(){ clearInterval(t); location.href=target; }
+
+  // عند عدم الضغط على متابعة: نطلب مرة واحدة فقط، ثم نكمل
+  function leave(){
+    if(followed || asked){ go(); return; }
+    asked=true; clearInterval(t);
+    $('ask').classList.add('show');
+  }
+
+  if(followed){ $('count').textContent='شكراً لأنك من متابعينا 💙'; n=Math.min(n,3); }
+
+  t=setInterval(function(){ n--; if(!followed) $('n').textContent=n; if(n<=0) leave(); },1000);
+
+  $('go').addEventListener('click',function(e){ e.preventDefault(); leave(); });
+  $('later').addEventListener('click',go);
+
+  Array.prototype.forEach.call(document.querySelectorAll('.js-follow'),function(a){
+    a.addEventListener('click',function(){
+      followed=true; clearInterval(t);
+      try{ localStorage.setItem('fbFollowed','1'); }catch(e){}
+      $('ask').classList.remove('show');
+      $('count').textContent='شكراً لمتابعتك 💙';
+      $('go').textContent='الآن أكمل إلى الموقع ←';
+    });
+  });
+})();
+</script>
+</body>
+</html>
