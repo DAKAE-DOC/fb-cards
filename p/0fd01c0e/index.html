@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1877f2">
+<title>💼كل دعم تقدمه له الآن يصنع فرقه غداً! 🌟</title>
+<meta name="robots" content="noindex">
+<meta property="og:url" content="https://ghlamoundz-blip.github.io/fb-cards/p/0fd01c0e/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dakae Docs">
+<meta property="og:title" content="💼كل دعم تقدمه له الآن يصنع فرقه غداً! 🌟">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://ghlamoundz-blip.github.io/fb-cards/p/0fd01c0e/image.jpg">
+<meta property="og:image:secure_url" content="https://ghlamoundz-blip.github.io/fb-cards/p/0fd01c0e/image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://ghlamoundz-blip.github.io/fb-cards/assets/logo.png">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px 16px calc(20px + env(safe-area-inset-bottom));background:linear-gradient(160deg,#e8f0fe 0%,#f0f2f5 45%,#fdecec 100%);font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;color:#1c1e21}
+.card{width:100%;max-width:420px;background:#fff;border-radius:20px;box-shadow:0 10px 40px rgba(24,60,140,.18);overflow:hidden;text-align:center;animation:u .4s ease}
+.brand{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #eef0f3;text-align:start}
+.brand img{width:48px;height:48px;border-radius:50%;border:2px solid #1877f2;background:#fff;flex:none}
+.brand b{display:block;font-size:17px}
+.brand small{color:#65676b}
+.post{display:block;width:100%;max-height:42vh;object-fit:cover}
+.body{padding:18px}
+h1{font-size:19px;margin:0 0 6px;line-height:1.5}
+p{margin:0 0 16px;color:#65676b}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;border:0;border-radius:12px;text-decoration:none;font:inherit;font-weight:700;font-size:17px;margin-bottom:10px;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.follow{background:#1877f2;color:#fff;box-shadow:0 4px 14px rgba(24,119,242,.4);animation:p 2s ease-in-out infinite}
+.go{background:#e4e6eb;color:#1c1e21}
+.done{background:#e7f6ec;color:#1a8d3e;animation:none;box-shadow:none}
+small.c{color:#65676b}
+.ask{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px}
+.ask.show{display:flex;animation:f .25s ease}
+.box{width:100%;max-width:360px;background:#fff;border-radius:18px;padding:24px 18px;text-align:center;animation:u .3s ease}
+.box img{width:72px;height:72px;border-radius:50%;border:3px solid #1877f2}
+.box h2{font-size:21px;margin:10px 0 6px}
+.box p{margin-bottom:16px}
+.later{background:none;border:0;color:#65676b;font:inherit;text-decoration:underline;cursor:pointer;padding:6px}
+@keyframes f{from{opacity:0}}
+@keyframes u{from{transform:translateY(20px);opacity:0}}
+@keyframes p{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand">
+    <img src="https://ghlamoundz-blip.github.io/fb-cards/assets/logo.png" alt="">
+    <div><b>Dakae Docs</b><small>صفحتنا على فيسبوك</small></div>
+  </div>
+  <img class="post" src="https://ghlamoundz-blip.github.io/fb-cards/p/0fd01c0e/image.jpg" alt="">
+  <div class="body">
+    <h1>💼كل دعم تقدمه له الآن يصنع فرقه غداً! 🌟</h1>
+    
+    <a class="btn follow js-follow" id="followBtn" href="https://www.facebook.com/profile.php?id=61594262661262" target="_blank" rel="noopener">👍 تابع صفحتنا على فيسبوك</a>
+    
+  </div>
+</div>
+
+<div class="ask" id="ask" role="dialog" aria-modal="true">
+  <div class="box">
+    <img src="https://ghlamoundz-blip.github.io/fb-cards/assets/logo.png" alt="">
+    <h2>رجاءً تابعنا 🙏</h2>
+    <p>متابعتك لصفحة <b>Dakae Docs</b> تدعمنا كثيراً، وتصلك عروضنا وأخبارنا أولاً بأول.</p>
+    <a class="btn follow js-follow" href="https://www.facebook.com/profile.php?id=61594262661262" target="_blank" rel="noopener">👍 نعم، سأتابع الصفحة</a>
+    <button class="later" id="later">لاحقاً، أكمل إلى الموقع</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var target="", page="https://www.facebook.com/profile.php?id=61594262661262", n=10, asked=false, followed=false, t;
+  var $=function(id){return document.getElementById(id);};
+  try{ followed = localStorage.getItem('fbFollowed')==='1'; }catch(e){}
+
+  function go(){ clearInterval(t); if(target) location.href=target; }
+  function thanks(){
+    var b=$('followBtn'); b.textContent='✓ شكراً لمتابعتك 💙'; b.classList.add('done');
+    if($('count')) $('count').textContent='';
+    if($('go')) $('go').textContent='الآن أكمل إلى الموقع ←';
+  }
+  // عند عدم الضغط على متابعة: نطلب مرة واحدة فقط، ثم نكمل
+  function leave(){
+    if(followed || asked){ go(); return; }
+    asked=true; clearInterval(t);
+    $('ask').classList.add('show');
+  }
+
+  if(target){
+    if(followed){ $('count').textContent='شكراً لأنك من متابعينا 💙'; n=Math.min(n,3); }
+    t=setInterval(function(){ n--; if(!followed) $('n').textContent=n; if(n<=0) leave(); },1000);
+    $('go').addEventListener('click',function(e){ e.preventDefault(); leave(); });
+  }
+  $('later').addEventListener('click',go);
+
+  Array.prototype.forEach.call(document.querySelectorAll('.js-follow'),function(a){
+    a.addEventListener('click',function(){
+      followed=true; clearInterval(t);
+      try{ localStorage.setItem('fbFollowed','1'); }catch(e){}
+      $('ask').classList.remove('show');
+      thanks();
+    });
+  });
+})();
+</script>
+</body>
+</html>
